@@ -1,0 +1,18 @@
+/* CSS Variables */
+:root {
+
+  /* Color Basic */
+  --text-main: #B6BDD8;
+  --title-color: #FFFFFF;
+  --color-bg2: #2C2C48;
+
+  /* Gradient Background  */
+  --gradient-color: linear-gradient(90deg, #266AFF 0%, #00ccff 100%);
+
+  /* Border Botoom Title */
+  --gradient-border: linear-gradient(90deg, #00ccff 0%, rgba(24, 209, 255, 0) 100%);
+
+  /* font family variables */
+  --roboto: 'Roboto', sans-serif;
+
+}

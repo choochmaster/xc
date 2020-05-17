@@ -1,0 +1,135 @@
+/* Global Classes */
+html,
+body {
+   margin: 0%;
+   box-sizing: border-box;
+   width: 100%;
+   height: 100%;
+   font-family: var(--roboto);
+
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+ul,
+li,
+ol {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+section {
+   padding: 5rem 0;
+   overflow: hidden;
+}
+
+.ground-clip {
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.section-title h1 {
+   text-align: center;
+   color: var(--text-main);
+   text-transform: capitalize;
+   font-weight: 700;
+   font-size: 34px;
+   position: relative;
+   display: inline-block;
+   margin: 0;
+}
+
+.section-title h1::before {
+   content: "";
+   position: absolute;
+   left: -25px;
+   top: 12px;
+   height: 15px;
+   width: 15px;
+   border-radius: 50%;
+   background: var(--gradient-color);
+}
+
+h2.text-title {
+   font-weight: 600;
+   font-size: 24px;
+   margin: 0;
+   position: relative;
+}
+
+h2.text-title::before {
+   content: "";
+   position: absolute;
+   background: var(--gradient-border);
+   border-radius: 10px;
+   width: 35%;
+   height: 3px;
+   display: block;
+   left: 0;
+   bottom: -10px;
+   transition: .3s ease;
+}
+
+
+
+
+
+p {
+   padding: 0;
+   line-height: 25px;
+   color: var(--text-main);
+   font-size: 16px;
+   text-transform: capitalize;
+   font-weight: 500;
+}
+
+.button-min {
+   background: var(--gradient-color);
+   background-clip: padding-box;
+   background-size: 200%;
+   position: relative;
+   display: inline-block;
+   color: #fff;
+   padding: .8rem 2.2rem;
+   text-transform: capitalize;
+   transition: .6s ease;
+   font-weight: 500;
+   font-size: 16px;
+   border-radius: 5px;
+}
+
+.button-min:hover {
+   background-position: 100%;
+   color: #fff;
+   text-decoration: none;
+}
+
+.button-tra {
+   background: transparent;
+   background-clip: padding-box;
+   background-size: 200%;
+   color: var(--text-main);
+   position: relative;
+   position: relative;
+   display: inline-block;
+   padding: .8rem 2.2rem;
+   text-transform: capitalize;
+   font-weight: 500;
+   font-size: 16px;
+   border-radius: 5px;
+}
+
+.button-tra:hover {
+   background: var(--gradient-color);
+   background-clip: padding-box;
+   background-size: 200%;
+   position: relative;
+   background-position: 100%;
+   color: #fff;
+   text-decoration: none;
+}

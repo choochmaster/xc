@@ -1,0 +1,526 @@
+/*
+  Theme Name: SaasKit - Create Template For Saas Software Landing Page HTML5
+  Author: ArtexDev
+  Description: Software Landing Page HTML5 Template
+  Version: 1.0
+*/
+
+/* CSS Index
+-----------------------------------
+1. Theme default css
+2. navbar
+3. header
+4. Feautures
+5. Best Feautures
+6. Pricing
+7. Contact
+8. Footer
+9. CoprRight
+*/
+
+/* import fonts from fonts.css file */
+@import url(fonts.css);
+
+/* css variables */
+@import url(partials/_variables.css);
+
+/* import global styling */
+@import url(partials/_global.css);
+
+body {
+    background: #222238
+}
+
+button:focus,
+input:focus,
+input:focus,
+textarea,
+textarea:focus {
+    outline: 0
+}
+
+/* Start Navbar */
+
+.navbar {
+    background: url(../img/bg-header-repeat.svg) repeat;
+    border-bottom: 1px dashed var(--color-bg2);
+}
+
+.navbar .navbar-brand img {
+    width: 140px;
+}
+
+.navbar .navbar-nav {
+    text-align: center;
+}
+
+.navbar .navbar-nav li a {
+    color: var(--title-color);
+    padding: 8px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 5px;
+    text-transform: capitalize;
+    position: relative;
+    display: inline-block;;
+    transition: .3s ease;
+}
+
+.navbar .navbar-nav li a.active {
+    color: var(--title-color);
+    position: relative;
+    transition: .3s ease;
+}
+
+.navbar .navbar-nav li .nav-link.active::before {
+    content: "";
+    position: absolute;
+    background: var(--gradient-border);
+    border-radius: 10px;
+    width: 100%;
+    height: 3px;
+    display: block;
+    left: 0;
+    bottom: 0px;
+    transition: .3s ease;
+}
+
+.navbar .navbar-nav li a.nav-link:hover::before {
+    content: "";
+    position: absolute;
+    background: var(--gradient-border);
+    border-radius: 10px;
+    width: 100%;
+    height: 3px;
+    display: block;
+    left: 0;
+    bottom: 0px;
+    transition: .3s ease;
+}
+
+.navbar .navbar-nav li .button-min {
+    display: block;
+}
+
+.navbar .navbar-nav li .button-min.active {
+    color: var(--title-color);
+    background-position: 100%;
+}
+
+.navbar .navbar-nav li a.button-tra {
+    background: var(--color-bg2);
+    display: block;;
+
+}
+
+.navbar .icon-bar {
+    width: 22px;
+    height: 2px;
+    background-color: var(--title-color);
+    display: block;
+    transition: all 0.2s;
+    margin-top: 4px
+}
+
+.navbar .navbar-toggler {
+    border: none;
+    background: transparent !important;
+}
+
+.navbar .navbar-toggler .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar .navbar-toggler .middle-bar {
+    opacity: 0;
+}
+
+.navbar .navbar-toggler .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+
+.navbar .navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+}
+
+.navbar .navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+}
+
+.navbar .navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+}
+
+/* End Navbar */
+
+/* Start Header */
+
+header {
+    background: url(../img/bg-header-repeat.svg) repeat;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    padding-top: 5rem;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    background: url(../img/curve.svg) center no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+header h1 {
+    font-family: var(--roboto);
+    text-transform: capitalize;
+    font-weight: 700;
+    color: var(--title-color);
+    font-size: 48px;
+}
+
+header h1:nth-child(1) {
+    padding-top: 5rem;
+}
+
+header h1 span {
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+header img {
+    width: 800px;
+}
+
+header .btns {
+    margin: 3rem auto;
+}
+
+header .btns li {
+    display: inline-block;
+}
+
+header .btns li a {
+    color: var(--title-color);
+}
+
+/* End Header */
+
+/* Start Feautures */
+
+.Feautures {
+    background: #222238;
+    text-align: center;
+}
+
+.Feautures .info_box {
+    background: #161624;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    text-align: left;
+    padding: 15px 15px 15px 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+.Feautures .info_box::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    background: var(--color-bg2);
+}
+
+.Feautures .info_box p {
+    margin: 2rem 0;
+}
+
+.Feautures .info_box a {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    color: var(--title-color);
+    transform: translate(-50%, 0);
+    background: var(--color-bg2);
+    padding: 5px 15px;
+    text-transform: capitalize;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    transition: .3s ease;
+}
+
+.Feautures .info_box a:hover {
+    color: var(--text-main);
+}
+
+.Feautures .info_box i {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    color: #266AFF;
+    font-size: 36px;
+    opacity: 0;
+    transition: .3s ease;
+}
+
+.Feautures .info_box:hover i {
+    top: 15px;
+    right: 15px;
+    opacity: 0.5;
+}
+
+/* End Feautures */
+
+/* Start Best Feautures */
+
+.Best_Feautures {
+    background: var(--color-bg2);
+}
+
+.Best_Feautures .info {
+    margin-top: 5rem;
+    position: relative;
+}
+
+.Best_Feautures .info .info-box h2 {
+    margin-top: 2rem;
+}
+
+
+.Best_Feautures .info .info-box p {
+    margin: 1rem 0;
+}
+
+/* End Best Feautures */
+
+
+/* Start Pricing */
+
+.Pricing {
+    background: var(--color-bg2);
+}
+
+.plan {
+    background: #393855;
+    border-radius: 5px;
+    margin-top: 5rem;
+    overflow: hidden;
+}
+
+.plan img {
+    width: 100px;
+    margin: 0 auto;
+    padding: 4rem 0 2rem;
+    display: block;
+}
+
+.plan h2 {
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.plan ul {
+    text-align: left;
+    padding: 2rem;
+}
+
+.plan ul li {
+    padding: 1rem 0 0 0;
+    text-transform: capitalize;
+    color: var(--text-main);
+}
+
+.plan ul li i {
+    margin-right: 5px;
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.plan ul li.notEnabled {
+    opacity: .3;
+}
+
+.plan h3 {
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+.plan .box-buy {
+    background: #161624;
+    padding: 2rem 0;
+}
+
+/* End Pricing */
+
+/* Start Contact */
+
+.Contact {
+    position: relative;
+}
+
+.Contact::before {
+    content: "";
+    position: absolute;
+    height: 220px;
+    width: 100%;
+    background: var(--color-bg2);
+    bottom: 0;
+    left: 0;
+}
+
+.Contact .contact_form {
+    background: #161624;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 5rem;
+    padding-bottom: 25px;
+    z-index: 2;
+    position: relative
+}
+
+.Contact .contact_form .top_head {
+    background: var(--gradient-color);
+    width: 100%;
+    height: 30px;
+}
+
+.Contact .contact_form p {
+    color: var(--text-main);
+    font: normal 500 18px var(--roboto);
+    margin: 25px 0;
+    text-align: center;
+}
+
+.contact__form {
+    padding: 0 15px;
+}
+
+.Contact .form-control {
+    font: normal 500 16px/20px var(--roboto);
+    padding: .8rem 0.3rem;
+    border: 1px solid transparent;
+    background: var(--color-bg2);
+    color: var(--text-main);
+    border-radius: .25rem;
+    margin: 5px 0;
+    box-shadow: none;
+}
+
+.Contact .form-control:focus,
+.Contact .form-control:active {
+    background: var(--color-bg2);
+    color: var(--text-main);
+    border: 1px solid #266AFF;
+    outline-style: none;
+}
+
+.Contact .contact_form .btn {
+    width: 100%;
+    margin: 0;
+    border: none;
+    margin: 5px 0;
+}
+
+/* End Contact */
+
+/* Start Footer */
+
+footer {
+    background: var(--color-bg2);
+    padding: 1rem 0 4rem;
+    overflow: hidden;
+}
+
+footer img {
+    width: 180px;
+}
+
+footer h2 {
+    margin-bottom: 2rem !important;
+}
+
+footer ul {
+    margin-bottom: 1rem;
+}
+
+footer ul li a {
+    color: var(--text-main);
+    text-transform: capitalize;
+    position: relative;
+    padding-bottom: 5px;
+    transition: .3s ease;
+}
+
+footer ul li a:hover {
+    color: #266AFF;
+    padding-left: 5px;
+}
+
+footer .square li {
+    display: inline-block;
+}
+
+footer .square li a {
+    font-size: 28px;
+}
+
+footer .square li a:hover {
+    color: var(--title-color);
+    padding: 0;
+}
+
+#scrollUp {
+    background: var(--gradient-color);
+    height: 40px;
+    width: 40px;
+    right: 25px;
+    bottom: 60px;
+    color: var(--title-color);
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+/* End Footer */
+
+/* Start CoprRight */
+
+.CoprRight {
+    background: var(--color-bg2);
+    padding: 1rem 0;
+}
+
+.CoprRight p {
+    margin: 0;
+    padding: 0;
+}
+
+.CoprRight i {
+    color: #266AFF;
+}
+
+.CoprRight a {
+    color: var(--text-main);
+    transition: .3s ease;
+}
+
+.CoprRight a:hover {
+    color: var(--title-color);
+}
+
+/* End CoprRight */
